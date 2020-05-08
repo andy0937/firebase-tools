@@ -52,19 +52,15 @@ const DownloadDetails: { [s in DownloadableEmulators]: EmulatorDownloadDetails }
   },
   gui: {
     version: "0.0.0",
-    downloadPath: path.join(CACHE_DIR, "gui-v0.0.0-EAP.zip"),
-    unzipDir: path.join(CACHE_DIR, "gui-v0.0.0-EAP"),
-    binaryPath: path.join(CACHE_DIR, "gui-v0.0.0-EAP", `server.bundle.js`),
+    downloadPath: path.join(CACHE_DIR, "gui-v0.0.1-EAP.zip"),
+    unzipDir: path.join(CACHE_DIR, "gui-v0.0.1-EAP"),
+    binaryPath: path.join(CACHE_DIR, "gui-v0.0.1-EAP", `server.bundle.js`),
     opts: {
       cacheDir: CACHE_DIR,
-      remoteUrl:
-        "https://storage.googleapis.com/firebase-preview-drop/emulator/gui-vEAP.zip?_=" +
-        new Date().getTime(),
-      expectedSize: -1,
-      expectedChecksum: "",
+      remoteUrl: "https://storage.googleapis.com/firebase-preview-drop/emulator/gui-vEAP.zip",
+      expectedSize: 3182696,
+      expectedChecksum: "2e9e093f2d20a1cf6715c467c3fccaf2",
       namePrefix: "gui",
-      skipChecksumAndSize: true,
-      skipCache: true,
     },
   },
   pubsub: {

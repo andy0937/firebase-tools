@@ -153,9 +153,7 @@ export function shouldStart(options: any, name: Emulators): boolean {
     // The GUI only starts if we know the project ID AND at least one emulator
     // supported by GUI is launching.
     return (
-      previews.emulatorgui &&
-      !!options.project &&
-      targets.some((target) => EMULATORS_SUPPORTED_BY_GUI.indexOf(target) >= 0)
+      !!options.project && targets.some((target) => EMULATORS_SUPPORTED_BY_GUI.indexOf(target) >= 0)
     );
   }
 
